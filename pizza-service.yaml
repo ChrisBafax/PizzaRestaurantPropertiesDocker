@@ -24,6 +24,7 @@ spring:
     allow-circular-references: true
   rabbitmq:
     host: 172.17.0.5
+    port: 5672
 
 server:
   port: 0
