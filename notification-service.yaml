@@ -1,0 +1,20 @@
+app:
+  rabbitmq:
+    notify-pizzas-added-routingkey: q.notify-pizzas-added-to-restaurant
+
+server:
+  port: 0
+  # Using a random port to avoid conflicts with other instances of the service.
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  zipkin:
+    base-url: http://localhost:9411
+  main:
+    allow-circular-references: true
