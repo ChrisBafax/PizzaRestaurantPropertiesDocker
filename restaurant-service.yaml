@@ -19,7 +19,7 @@ spring:
     pathmatch:
       matching-strategy: ant_path_matcher
   zipkin:
-    base-url: http://127.0.0.1:9411
+    base-url: http://172.17.0.4:9411
   main:
     allow-circular-references: true
 
