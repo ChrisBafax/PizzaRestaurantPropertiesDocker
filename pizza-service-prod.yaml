@@ -24,7 +24,7 @@ spring:
     pathmatch:
       matching-strategy: ant_path_matcher
   zipkin:
-    base-url: http://localhost:9411
+    base-url: http://127.0.0.1:9411
   main:
     allow-circular-references: true
 
@@ -45,7 +45,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://172.17.0.3:8761/eureka
 
 # Swagger UI
 # http://localhost:9090/api/swagger-ui/index.html
