@@ -18,3 +18,5 @@ spring:
     base-url: http://172.17.0.4:9411
   main:
     allow-circular-references: true
+  rabbitmq:
+    host: 172.17.0.5
